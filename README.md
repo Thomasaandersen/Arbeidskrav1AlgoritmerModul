@@ -24,7 +24,7 @@ Lineært søk fungerer også på usorterte data. Binærsøk er raskere for gjent
 
 ### 2. Egen generisk stakk
 
-`CustomStack<T>` er implementert med egne lenkede noder og følger LIFO-prinsippet: sist inn er først ut. Den tilbyr `Push`, `Pop`, `Peek`, `Count` og `IsEmpty`.
+`CustomStack<T>` er implementert med egne lenkede noder og følger LIFO-prinsippet: sist inn er først ut. Den gir `Push`, `Pop`, `Peek`, `Count` og `IsEmpty`.
 
 - `Push`, `Pop` og `Peek`: O(1) tid.
 - Plassbruk: O(n) for n elementer.
@@ -141,11 +141,10 @@ Arbeidskrav1Algoritmer/
 
 ## Refleksjon
 
-Selve arbeidet med arbeidskravet viser hvordan valget av datastruktur henger sammen med algoritmen: Køen i BFS gir traversering nivå for nivå, mens stakken i DFS lar søket gå dypere langs en gren. Den egenimplementerte stakken viser også hvordan lenkede noder kan gi konstant tid for innsetting og fjerning på toppen. Kontroller av tomme datasett, duplikater, sykler og manglende stasjoner gjør det enklere å se hvordan løsningene oppfører seg i kanttilfeller.
+Selve arbeidet med arbeidskravet viser hvordan valget av datastruktur henger sammen med algoritmen: Køen i BFS gir traversering nivå for nivå, mens stakken i DFS lar søket gå dypere langs en gren. Den egenimplementerte stakken viser også hvordan lenkede noder kan gi konstant tid for innsetting og fjerning på toppen. Kontroller av tomme datasett, duplikater, sykler/cycles og manglende stasjoner gjør det enklere å se hvordan løsningene oppfører seg i kanttilfeller.
 
-Dette har vært et veldig krevende arbeidskrav, for dette med algorytmer satt ikke for meg. Jeg måtte konstant forholde meg til lærestoffet vi har gått gjennom, lærings lenker som ble delt som ressurser og presentasjonene. Jeg forstår at vi kan bruke AI, men ettersom jeg slet så mye med dette så ville jeg faktisk holde meg unna for å kunne faktisk lære av det.
+Dette har vært et veldig krevende arbeidskrav, for dette med algoritmer satt ikke for meg. Jeg måtte ofte falle tilbake til lærestoffet vi har gått gjennom, lærings lenker som ble delt som ressurser og presentasjonene. Jeg har brukt AI som en ett hjelpemiddel og for å kunne peke meg i riktig retning. Svarene som den gav meg er ikke nødvendigvis det jeg har brukt som svar i oppgavene, men for å hinte til og få meg til å gå over alt av notater jeg har gjort og tenke litt. AI ble også brukt for å hjelpe meg sette opp en oversiktlig README fil som var mer lettleselig, med tanke på alle oppgavene.
 
-Jeg valgte å legge oppgave 4 og 5 i en egen folder `Graphs`. Dette fordi oppgave 5 skulle gjenbruke grafen fra oppgave 4 og jobbe videre med den i dybden. 
+Jeg valgte å legge oppgave 4 og 5 i en egen folder `Graphs`. Graph.cs fungerer da som felles strukturen. BFS og DFS er ulike måter å gå gjennom den på, så de ligger i hver sin undermappe for ät prosjektet skal slippe å ha to forskjellige versjoner/utgaver av den samme grafen.
 
 Jeg la ved kommentarer ved hvert punkt jeg føler det var nødvendig, spesielt for min egen del slik at jeg kunne huske hva hver funksjon gjorde. Spesielt her i README filen, så skrev jeg ned oppgavene og litt for mye i dypden om hva de gjorde, men for min egen del. 
-
